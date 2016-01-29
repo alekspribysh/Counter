@@ -37,6 +37,7 @@
 
 
             <TextView
+                android:id="@+id/scoreA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
@@ -45,31 +46,36 @@
                 android:textSize="20dp"
                 android:layout_margin="4dp"
 
-
                 />
 
             <Button
+                android:id="@+id/ThrepointsA"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="3 points"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="4dp"
-                android:background="?attr/colorPrimary"/>
+                android:background="?attr/colorPrimary"
+                android:onClick="tpointsA"/>
 
             <Button
+                android:id="@+id/TwopointsA"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="2 points"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="4dp"
-                android:background="?attr/colorPrimary"/>
+                android:background="?attr/colorPrimary"
+                android:onClick="twpointsA"/>
             <Button
+                android:id="@+id/FreepointsA"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="free throw"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="4dp"
-                android:background="?attr/colorPrimary"/>
+                android:background="?attr/colorPrimary"
+                android:onClick="fpointsA"/>
 
         </LinearLayout>
 
@@ -92,6 +98,7 @@
 
 
             <TextView
+                android:id="@+id/scoreB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
@@ -104,27 +111,33 @@
                 />
 
             <Button
+                android:id="@+id/ThrepointsB"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="3 points"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="4dp"
-                android:background="?attr/colorPrimary"/>
+                android:background="?attr/colorPrimary"
+                android:onClick="tpointsB"/>
 
             <Button
+                android:id="@+id/TwopointsB"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="2 points"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="4dp"
-                android:background="?attr/colorPrimary"/>
+                android:background="?attr/colorPrimary"
+                android:onClick="twpointsB"/>
             <Button
+                android:id="@+id/FreepointsB"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="free throw"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="4dp"
-                android:background="?attr/colorPrimary"/>
+                android:background="?attr/colorPrimary"
+                android:onClick="fpointsB"/>/>
 
         </LinearLayout>
 
@@ -143,10 +156,10 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/button2"
+                android:id="@+id/showVinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="    "
+                android:text=" "
                 android:layout_gravity="center_horizontal"
 
                 />
@@ -168,11 +181,12 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/stop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RESET"
+                android:text="stop game"
                 android:layout_gravity="center_horizontal"
+                android:onClick="displayViner"
 
                 />
 
@@ -194,11 +208,12 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/reset"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="RESET"
                 android:layout_gravity="center_horizontal"
+                android:onClick="reset"
 
                 />
 
